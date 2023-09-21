@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Update User-CRUD!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-darK" style="background-color: #FD6220; color:antiquewhite;">
+      <div class="container-fluid">
+        <h6 class="navbar-brand" href="#" style="margin-top: 10px;">CRUD</h6>
+        <h6>Naydelin Alondra Zavala Zúñiga</h6>
+      </div>
+    </nav>
+
+    <div class="container" style=" margin-top: 20px; width: 50%;">
+      <div>
+        <!-- Form para los ususarios -->
+          <form style="margin-left: 30px;" >
+            <p>
+              <label for="firstname">Firstname</label>
+              <br>
+              <input type="text" id="firstname" style="width: 100%!important;"> 
+              <!--Para traer la informacion del id-->
+              <input type="hidden" id="id" style="width: 100%!important;"> 
+            </p>
+            <p>
+              <label for="lastname">Lastname</label>
+              <br>
+              <input type="text" id="lastname" style="width: 100%!important;">
+            </p>
+            <p>
+              <label for="address">Address</label>
+              <br>
+              <input type="text" id="address" style="width: 100%!important;">
+            </p>
+            <p>
+              <label for="phone">Phone</label>
+              <br>
+              <input type="phone" id="phone" style="width: 100%!important;">
+            </p>
+              
+            <p>
+              <label for="city">City</label>
+              <br>
+              <input type="text" id="city" style="width: 100%!important;">
+            </p>
+            <p>
+              <label for="zipcode">Zip Code</label>
+              <br>
+              <input type="text" id="zipcode" style="width: 100%!important;">
+            </p>
+            <button class="btn btn-success" style="width: 400px; margin-left: 90px;" id="btnUpdate">
+              Update
+            </button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal2" style="background-color: #DD540A; width: 400px; margin-top: 10px; margin-left: 90px;">Cancel</button>  </button>
+            <!--<button type="button" class="btn btn-secondary" style="width: 100%!important;" id="btnCancel">Cancel</button> -->
+          </form>
+      </div>
+      <div class="modal fade" id="miModal2" tabindex="-1" aria-hidden="true" aria-labelledby="modalTitle" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="color: #ffffff; background-color: #C80B0B; padding-left: 37%;">
+                    <h4 class="modal-title" id="modalTitle" >WARNING!</h4>
+                </div>
+                <div class="modal-body" style="text-align: center;">
+                  <h5>Have you made the changes?</h5>
+                  <h5>Are you sure you want to leave?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="width: 100%!important;">Cancel</button>
+                    <button type="button" class="btn btn-secondary" style="width: 100%!important;" id="btnCancel">Exit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/update.js"></script>
+</body>
+</html>
